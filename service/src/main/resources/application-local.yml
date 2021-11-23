@@ -1,0 +1,12 @@
+spring:
+  profiles: local
+  r2dbc:
+    url: r2dbc:pool:postgresql://localhost:5432/postgres?currentSchema=template
+    username: root
+    password: admin12345
+    ssl: DISABLE
+
+logging:
+  level:
+    io.r2dbc.postgresql.QUERY: DEBUG # for queries
+    io.r2dbc.postgresql.PARAM: DEBUG # for parameters

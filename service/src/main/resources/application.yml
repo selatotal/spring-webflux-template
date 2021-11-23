@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: local
+  main:
+    banner-mode: off
+  logging:
+    level:
+      org.springframework.data.r2dbc: Debug
+
+management.endpoints.web.exposure.include: httptrace
